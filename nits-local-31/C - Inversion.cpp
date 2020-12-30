@@ -11,7 +11,7 @@ int main() {
     for(int i = 1; i <= n; i ++) {
         cin >> p[i];
     }
-    int cnt = 0, invert = 0;
+    int invert = 0;
     while(m --) {
         int x; cin >> x;
         if(x == 1) invert ^= 1;
@@ -24,7 +24,6 @@ int main() {
             int u, v;
             cin >> u >> v;
             swap(p[u], p[v]);
-            cnt ++;
         }
     }
     if(invert) {
